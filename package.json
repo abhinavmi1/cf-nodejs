@@ -2,7 +2,7 @@
   "name": "cf-nodejs",
   "version": "1.0.0",
   "scripts": {
-    "test": "nyc --reporter=lcov --reporter=text-lcov mocha",
+    "test": "node ./node_modules/nyc/bin/nyc --reporter=lcov --reporter=text-lcov ./node_modules/mocha/bin/mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "",
